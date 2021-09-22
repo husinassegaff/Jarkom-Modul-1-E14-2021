@@ -129,7 +129,7 @@ Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
 
 **Pembahasan:**
 - Filter yang perlu dijalankan adalah `src port 80`.
-![no-11b](img/no-11a.png)
+![no-11a](img/no-11a.png)
 - Kemudian mengakses situs `monta.if.its.ac.id` pada browser.
 - Gambar berikut menunjukan hasil capture filter paket yang berasal dari port 80.
 ![no-11b](img/no-11b.png)
@@ -139,22 +139,22 @@ Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
 
 **Pembahasan:**
 - Filter yang perlu dijalankan adalah `port 21`.
-![no-11b](img/no-12c.png)
+![no-12a](img/no-12c.png)
 - Kemudian menjalankan perintah `wget ftp://ftp.unicode.org/public/unidata/unicodedata.txt` di terminal.
 - Gambar berikut menunjukkan capture filter paket yang mengandung port 21.
-![no-11b](img/no-12b.png)
+![no-12b](img/no-12b.png)
 - Tetapi, jika tidak menggunakan poin b, maka hasilnya akan kosong seperti berikut.
-![no-11b](img/no-12.png)
+![no-12c](img/no-12.png)
 
 ## Soal 13
 Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
 
 **Pembahasan:**
 - Filter yang perlu dijalankan adalah `dst port 443`.
-![no-11b](img/no-13a.png)
+![no-13a](img/no-13a.png)
 - Kemudian mengakses situs `its.ac.id` pada browser.
 - Gambar berikut menunjukkan capture filter paket yang menuju port 443.
-![no-11b](img/no-13b.png)
+![no-13b](img/no-13b.png)
 
 ## Soal 14
 Filter sehingga wireshark hanya mengambil paket yang tujuannya ke kemenag.go.id!

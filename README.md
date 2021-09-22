@@ -1,10 +1,9 @@
 # Jarkom-Modul-1-E14-2021
 
 **Anggota kelompok**:
-
-- Dwi Wahyu Santoso		        05111840000121
-- Husin Muhammad Assegaff	    05111940000127
-- Khaela Fortunela		        05111940000057
+- Dwi Wahyu Santoso (05111840000121)
+- Husin Muhammad Assegaff (05111940000127)
+- Khaela Fortunela (05111940000057)
 
 
 ---

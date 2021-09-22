@@ -131,7 +131,7 @@ Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
 - Filter yang perlu dijalankan untuk hanya mengambil paket yang berasal dari port 80 adalah `src port 80`.
 - Paket yang berasal dari port 80 adalah paket yang berasal dari situs HTTP. Contohnya saat mengakses `monta.if.its.ac.id`.
 - Gambar berikut menunjukan capture filter paket yang berasal dari port 80 saat mengakses `monta.if.its.ac.id`.
-![no-11](img/11.1.png)
+![no-11b](img/11b.png)
 
 ## Soal 12
 Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!

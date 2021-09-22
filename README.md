@@ -35,6 +35,11 @@ B. Kendala
 Sebutkan webserver yang digunakan pada "ichimarumaru.tech"!
 
 **Pembahasan:**
+a. Dilakukan filter dengan http contains `ichimarumaru.tech`.
+![no-1a](img/no-1a.png)
+b. Kemudian klik kanan pada salah satu paket, pilih Follow, lalu TCP Stream.
+c. Maka akan terlihat bahwa Web server yang digunakan adalah nginx/1.18.0.
+![no-1b](img/no-1b.png)
 
 ## Soal 2
 Temukan paket dari web-web yang menggunakan basic authentication method!

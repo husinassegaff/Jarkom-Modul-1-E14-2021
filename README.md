@@ -170,7 +170,13 @@ Filter sehingga Wireshark hanya mengambil paket yang tujuannya ke `kemenag.go.id
 Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
 
 **Pembahasan:**
-
+- Untuk mendapatkan ip address, jalankan `ipconfig` pada terminal. Sehingga diketahui bahwa ip saya adalah `192.168.43.170`.
+![no-14a](img/no-15a.png)
+- Filter yang perlu dijalankan adalah `src host 192.168.43.170`.
+![no-14a](img/no-15b.png)
+- Kemudian mengakses situs `kemenag.go.id` pada browser.
+- Gambar berikut menunjukkan capture filter paket yang berasal dari ip saya.
+![no-14b](img/no-15c.png)
 
 ## Kendala
 Selama pengerjaan praktikum ini kendala yang dialami terkadang bingung dalam penggunaan filter sesuai dengan permintaan soal

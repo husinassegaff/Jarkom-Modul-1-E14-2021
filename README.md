@@ -128,18 +128,22 @@ Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server te
 Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
 
 **Pembahasan:**
-- Filter yang perlu dijalankan untuk hanya mengambil paket yang berasal dari port 80 adalah `src port 80`.
-- Paket yang berasal dari port 80 adalah paket yang berasal dari situs HTTP. Contohnya saat mengakses `monta.if.its.ac.id`.
-- Gambar berikut menunjukan capture filter paket yang berasal dari port 80 saat mengakses `monta.if.its.ac.id`.
+- Filter yang perlu dijalankan adalah `src port 80`.
+![no-11b](img/no-11a.png)
+- Kemudian mengakses situs `monta.if.its.ac.id`.
+- Gambar berikut menunjukan hasil capture filter paket yang berasal dari port 80.
 ![no-11b](img/no-11b.png)
 
 ## Soal 12
 Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
 
 **Pembahasan:**
-- Filter yang perlu dijalankan untuk hanya mengambil paket yang mengandung port 21 adalah `tcp.srcport eq 80`.
-- Paket yang berasal dari port 80 adalah paket yang berasal dari situs HTTP. Contohnya saat mengakses `monta.if.its.ac.id`.
-- Gambar berikut menunjukkan capture filter paket yang berasal dari port 80 saat mengakses `monta.if.its.ac.id`.
+- Filter yang perlu dijalankan adalah `port 21`.
+![no-11b](img/no-12a.png)
+- Kemudian menjalankan perintah `wget ftp://ftp.unicode.org/public/unidata/unicodedata.txt` di terminal.
+![no-11b](img/no-12b.png)
+- Gambar berikut menunjukkan capture filter paket yang mengandung port 21 saat proses download dijalankan.
+![no-11b](img/no-12c.png)
 
 ## Soal 13
 Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!

@@ -157,9 +157,14 @@ Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
 ![no-13b](img/no-13b.png)
 
 ## Soal 14
-Filter sehingga wireshark hanya mengambil paket yang tujuannya ke kemenag.go.id!
+Filter sehingga Wireshark hanya mengambil paket yang tujuannya ke `kemenag.go.id`!
 
 **Pembahasan:**
+- Filter yang perlu dijalankan adalah `dst host kemenag.go.id`.
+![no-14a](img/no-14a.png)
+- Kemudian mengakses situs `kemenag.go.id` pada browser.
+- Gambar berikut menunjukkan capture filter paket yang menuju `kemenag.go.id`.
+![no-14b](img/no-14b.png)
 
 ## Soal 15
 Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!

@@ -2,11 +2,10 @@
 
 **Anggota kelompok**:
 
-```
-1. Dwi Wahyu Santoso		    05111840000121
-2. Husin Muhammad Assegaff	    05111940000127
-3. Khaela Fortunela		        05111940000057
-```
+- Dwi Wahyu Santoso		        05111840000121
+- Husin Muhammad Assegaff	    05111940000127
+- Khaela Fortunela		        05111940000057
+
 
 ---
 ## Tabel Konten

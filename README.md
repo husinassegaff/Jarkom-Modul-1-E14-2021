@@ -141,9 +141,8 @@ Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
 - Filter yang perlu dijalankan adalah `port 21`.
 ![no-11b](img/no-12a.png)
 - Kemudian menjalankan perintah `wget ftp://ftp.unicode.org/public/unidata/unicodedata.txt` di terminal.
-![no-11b](img/no-12b.png)
 - Gambar berikut menunjukkan capture filter paket yang mengandung port 21 saat proses download dijalankan.
-![no-11b](img/no-12c.png)
+![no-11b](img/no-12b.png)
 
 ## Soal 13
 Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!

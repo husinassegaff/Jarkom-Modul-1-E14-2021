@@ -144,7 +144,7 @@ Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
 - Gambar berikut menunjukkan capture filter paket yang mengandung port 21 saat proses download dijalankan.
 ![no-11b](img/no-12b.png)
 - Tetapi, jika tidak menggunakan poin b, maka hasilnya akan kosong seperti berikut.
-![no-11b](img/no-12a.png)
+![no-11b](img/no-12.png)
 
 ## Soal 13
 Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!

@@ -2,8 +2,8 @@
 
 **Anggota kelompok**:
 - Dwi Wahyu Santoso (05111840000121)
-- Husin Muhammad Assegaff (05111940000127)
 - Khaela Fortunela (05111940000057)
+- Husin Muhammad Assegaff (05111940000127)
 
 
 ---
@@ -75,10 +75,12 @@ Temukan paket mysql yang mengandung perintah query select!
 Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap!
 
 **Pembahasan:**
-- Menggunakan filter mysql contains “INSERT”
-- Kemudian klik kanan terdapat Follow, lalu TCP Stream
-- Maka akan terlihat username dan password untuk login ke portal.ichimarumaru.tech
+- Menggunakan filter `mysql contains “INSERT”`
+- Kemudian klik kanan pada salah satu paket, pilih Follow, lalu TCP Stream.
+- Maka akan terlihat username dan password untuk login ke `portal.ichimarumaru.tech`.
+![no-5a](img/no-5a.png)
 - Selanjutnya dilakukan login dan pengisian konfigurasi pengkabelan T568B.
+![no-5b](img/no-5b.png)
 
 ## Soal 6
 Cari username dan password ketika melakukan login ke FTP Server!

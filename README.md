@@ -44,9 +44,10 @@ Temukan paket dari web-web yang menggunakan basic authentication method!
 
 **Pembahasan:**
 - Dilakukan filter dengan `http.authbasic`.
+![no-2a](img/no-2a.png)
 - Kemudian klik kanan pada salah satu paket, pilih Follow, lalu TCP Stream.
 - Maka akan terlihat bahwa metode authentication yang digunaan adalah basic.
-![no-2a](img/no-2a.png)
+![no-2b](img/no-2.png)
 
 ## Soal 3
 Ikuti perintah di basic.ichimarumaru.tech! Username dan password bisa didapatkan dari file .pcapng!

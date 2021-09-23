@@ -67,9 +67,10 @@ Temukan paket mysql yang mengandung perintah query select!
 
 **Pembahasan:**
 - Dilakukan filter dengan `mysql contains SELECT`.
+![no-4a](img/no-4a.png)
 - Kemudian klik kanan pada salah satu paket, pilih Follow, lalu TCP Stream.
 - Maka akan terlihat bahwa paket mysql tersebut mengandung perintah SELECT.
-![no-4a](img/no-4a.png)
+![no-4b](img/no-4b.png)
 
 
 ## Soal 5

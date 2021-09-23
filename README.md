@@ -34,7 +34,7 @@ Sebutkan webserver yang digunakan pada "ichimarumaru.tech"!
 
 **Pembahasan:**
 - Dilakukan filter dengan `http contains ichimarumaru.tech`.
-![no-1a](img/no-1a.png)
+![no-1a](img/no-1a.png?raw=true)
 - Kemudian klik kanan pada salah satu paket, pilih Follow, lalu TCP Stream.
 - Maka akan terlihat bahwa Web server yang digunakan adalah nginx/1.18.0.
 ![no-1b](img/no-1b.png)

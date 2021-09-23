@@ -54,10 +54,11 @@ Ikuti perintah di basic.ichimarumaru.tech! Username dan password bisa didapatkan
 **Pembahasan:**
 - Dilakukan filter dengan `http.host contains basic.ichimarumaru.tech`.
 - Kemudian pilih salah satu paket, dan ditemukan informasi sebagai berikut.
+![no-3](img/no-3.png)
   + Username: kuncimenujulautan
   + Password: tQKEJFbgNGC1NCZlWAOjhyCOm6o3xEbPkJhTciZN
-![no-3a](img/no-3a.png)
 - Setelah itu, username dan password dimasukkan pada `basic.ichimarumaru.tech` dan diminta untuk memasukkan urutan konfigurasi kabel T568A
+![no-3a](img/no-3a.png)
 
 
 ## Soal 4
@@ -74,6 +75,10 @@ Temukan paket mysql yang mengandung perintah query select!
 Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap!
 
 **Pembahasan:**
+- Menggunakan filter mysql contains “INSERT”
+- Kemudian klik kanan terdapat Follow, lalu TCP Stream
+- Maka akan terlihat username dan password untuk login ke portal.ichimarumaru.tech
+- Selanjutnya dilakukan login dan pengisian konfigurasi pengkabelan T568B.
 
 ## Soal 6
 Cari username dan password ketika melakukan login ke FTP Server!

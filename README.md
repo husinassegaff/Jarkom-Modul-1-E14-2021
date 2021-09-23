@@ -34,7 +34,7 @@ Sebutkan webserver yang digunakan pada "ichimarumaru.tech"!
 
 **Pembahasan:**
 - Dilakukan filter dengan `http contains ichimarumaru.tech`.
-![no-1a](img/no-1a.png?raw=true)
+![no-1a](img/no-1a.png)
 - Kemudian klik kanan pada salah satu paket, pilih Follow, lalu TCP Stream.
 - Maka akan terlihat bahwa Web server yang digunakan adalah nginx/1.18.0.
 ![no-1b](img/no-1b.png)
@@ -43,16 +43,32 @@ Sebutkan webserver yang digunakan pada "ichimarumaru.tech"!
 Temukan paket dari web-web yang menggunakan basic authentication method!
 
 **Pembahasan:**
+- Dilakukan filter dengan `http.authbasic`.
+- Kemudian klik kanan pada salah satu paket, pilih Follow, lalu TCP Stream.
+- Maka akan terlihat bahwa metode authentication yang digunaan adalah basic.
+![no-2a](img/no-2a.png)
 
 ## Soal 3
 Ikuti perintah di basic.ichimarumaru.tech! Username dan password bisa didapatkan dari file .pcapng!
 
 **Pembahasan:**
+- Dilakukan filter dengan `http.host contains basic.ichimarumaru.tech`.
+- Kemudian pilih salah satu paket, dan ditemukan informasi sebagai berikut.
+  + Username: kuncimenujulautan
+  + Password: tQKEJFbgNGC1NCZlWAOjhyCOm6o3xEbPkJhTciZN
+![no-3a](img/no-3a.png)
+- Setelah itu, username dan password dimasukkan pada `basic.ichimarumaru.tech` dan diminta untuk memasukkan urutan konfigurasi kabel T568A
+
 
 ## Soal 4
 Temukan paket mysql yang mengandung perintah query select!
 
 **Pembahasan:**
+- Dilakukan filter dengan `mysql contains SELECT`.
+- Kemudian klik kanan pada salah satu paket, pilih Follow, lalu TCP Stream.
+- Maka akan terlihat bahwa paket mysql tersebut mengandung perintah SELECT.
+![no-4a](img/no-4a.png)
+
 
 ## Soal 5
 Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap!

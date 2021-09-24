@@ -76,7 +76,7 @@ Temukan paket mysql yang mengandung perintah query select!
 - Dilakukan filter dengan ```mysql.query contains "select" || mysql.query contains "SELECT"```.
 ![no-4a](img/no-4a.png)
 - Maka akan terlihat bahwa paket mysql tersebut mengandung perintah `SELECT` atau `select`. Perbedaan ini dikarenakan untuk nama string case sensitive. Sehingga berikut pengecekan hasil capture query.
-![no-4b](img/no-4b.png)
+![no-4b](img/no-4b-.png)
 
 ![no-4c](img/no-4c.png)
 

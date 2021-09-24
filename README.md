@@ -33,14 +33,14 @@ B. Kendala
 Sebutkan webserver yang digunakan pada "ichimarumaru.tech"!
 
 **Pembahasan:**
-- Dilakukan filter dengan `http contains ichimarumaru.tech`.
+- Dilakukan filter dengan `http contains "ichimarumaru.tech".
 ![no-1a](img/no-1a.png)
 - Kemudian klik kanan pada salah satu paket, pilih Follow, lalu TCP Stream.
 ![no-1b](img/no-1b.png)
 - Maka akan terlihat bahwa Web server yang digunakan adalah nginx/1.18.0.
 ![no-1c](img/no-1c.png)
 
-Tambahan: Pengambilan paket juga dapat lebih spesifik menggunakan `http.host == 'ichimarumaru.tech`.
+Tambahan: Pengambilan paket juga dapat lebih spesifik menggunakan `http.host == "ichimarumaru.tech"`.
 ![no-1+](img/no-1+.png)
 
 ## Soal 2
@@ -57,7 +57,7 @@ Temukan paket dari web-web yang menggunakan basic authentication method!
 Ikuti perintah di basic.ichimarumaru.tech! Username dan password bisa didapatkan dari file .pcapng!
 
 **Pembahasan:**
-- Dilakukan filter dengan `http.host contains basic.ichimarumaru.tech`.
+- Dilakukan filter dengan `http.host contains "basic.ichimarumaru.tech"`.
 ![no-3a](img/no-3a.png)
 - Kemudian pilih salah satu paket, dan ditemukan informasi sebagai berikut.
   + Username: kuncimenujulautan
@@ -66,14 +66,14 @@ Ikuti perintah di basic.ichimarumaru.tech! Username dan password bisa didapatkan
 - Setelah itu, username dan password dimasukkan pada `basic.ichimarumaru.tech` dan diminta untuk memasukkan urutan konfigurasi kabel T568A
 ![no-3c](img/no-3c.png)
 
-Tambahan: Tidak semua paket GET memiliki data authorization yang berisi username dan password. Sehingga lebih baik menggunakan 'http.host == basic.ichimarumaru.tech && http.authorization'.
+Tambahan: Tidak semua paket GET memiliki data authorization yang berisi username dan password. Sehingga lebih baik menggunakan 'http.host == "basic.ichimarumaru.tech" && http.authorization'.
 ![no-3+](img/no-3+.png)
 
 ## Soal 4
 Temukan paket mysql yang mengandung perintah query select!
 
 **Pembahasan:**
-- Dilakukan filter dengan `mysql contains SELECT`.
+- Dilakukan filter dengan `mysql contains "SELECT"`.
 ![no-4a](img/no-4a.png)
 - Kemudian klik kanan pada salah satu paket, pilih Follow, lalu TCP Stream.
 - Maka akan terlihat bahwa paket mysql tersebut mengandung perintah SELECT.
@@ -84,7 +84,7 @@ Temukan paket mysql yang mengandung perintah query select!
 Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap!
 
 **Pembahasan:**
-- Menggunakan filter `mysql contains “INSERT”`
+- Menggunakan filter `mysql contains "INSERT"`
 ![no-5a](img/no-5a.png)
 - Kemudian klik kanan pada salah satu paket, pilih Follow, lalu TCP Stream.
 - Maka akan terlihat username dan password untuk login ke `portal.ichimarumaru.tech`.

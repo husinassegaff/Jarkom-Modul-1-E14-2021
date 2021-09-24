@@ -34,10 +34,14 @@ Sebutkan webserver yang digunakan pada "ichimarumaru.tech"!
 
 **Pembahasan:**
 - Dilakukan filter dengan `http contains ichimarumaru.tech`.
-![no-1a](img/no-1.png)
+![no-1a](img/no-1a.png)
 - Kemudian klik kanan pada salah satu paket, pilih Follow, lalu TCP Stream.
-- Maka akan terlihat bahwa Web server yang digunakan adalah nginx/1.18.0.
 ![no-1b](img/no-1b.png)
+- Maka akan terlihat bahwa Web server yang digunakan adalah nginx/1.18.0.
+![no-1c](img/no-1c.png)
+
+Tambahan: Pengambilan paket juga dapat lebih spesifik menggunakan `http.host == 'ichimarumaru.tech`.
+![no-1+](img/no-1+.png)
 
 ## Soal 2
 Temukan paket dari web-web yang menggunakan basic authentication method!
@@ -46,21 +50,24 @@ Temukan paket dari web-web yang menggunakan basic authentication method!
 - Dilakukan filter dengan `http.authbasic`.
 ![no-2a](img/no-2a.png)
 - Kemudian klik kanan pada salah satu paket, pilih Follow, lalu TCP Stream.
-- Maka akan terlihat bahwa metode authentication yang digunaan adalah basic.
-![no-2b](img/no-2.png)
+- Maka dapat dicek bahwa metode authentication yang digunakan memanglah basic.
+![no-2b](img/no-2b.png)
 
 ## Soal 3
 Ikuti perintah di basic.ichimarumaru.tech! Username dan password bisa didapatkan dari file .pcapng!
 
 **Pembahasan:**
 - Dilakukan filter dengan `http.host contains basic.ichimarumaru.tech`.
+![no-3a](img/no-3a.png)
 - Kemudian pilih salah satu paket, dan ditemukan informasi sebagai berikut.
-![no-3](img/no-3.png)
   + Username: kuncimenujulautan
   + Password: tQKEJFbgNGC1NCZlWAOjhyCOm6o3xEbPkJhTciZN
+![no-3b](img/no-3b.png)
 - Setelah itu, username dan password dimasukkan pada `basic.ichimarumaru.tech` dan diminta untuk memasukkan urutan konfigurasi kabel T568A
-![no-3a](img/no-3a.png)
+![no-3c](img/no-3c.png)
 
+Tambahan: Tidak semua paket GET memiliki data authorization yang berisi username dan password. Sehingga lebih baik menggunakan 'http.host == basic.ichimarumaru.tech && http.authorization'.
+![no-3+](img/no-3+.png)
 
 ## Soal 4
 Temukan paket mysql yang mengandung perintah query select!
@@ -78,11 +85,12 @@ Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! Username dan passw
 
 **Pembahasan:**
 - Menggunakan filter `mysql contains “INSERT”`
+![no-5a](img/no-5a.png)
 - Kemudian klik kanan pada salah satu paket, pilih Follow, lalu TCP Stream.
 - Maka akan terlihat username dan password untuk login ke `portal.ichimarumaru.tech`.
-![no-5a](img/no-5a.png)
-- Selanjutnya dilakukan login dan pengisian konfigurasi pengkabelan T568B.
 ![no-5b](img/no-5b.png)
+- Selanjutnya dilakukan login dan pengisian konfigurasi pengkabelan T568B.
+![no-5c](img/no-5c.png)
 
 ## Soal 6
 Cari username dan password ketika melakukan login ke FTP Server!

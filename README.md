@@ -66,7 +66,7 @@ Ikuti perintah di basic.ichimarumaru.tech! Username dan password bisa didapatkan
 - Setelah itu, username dan password dimasukkan pada `basic.ichimarumaru.tech` dan diminta untuk memasukkan urutan konfigurasi kabel T568A
 ![no-3c](img/no-3c.png)
 
-Tambahan: Tidak semua paket GET memiliki data authorization yang berisi username dan password. Sehingga lebih baik menggunakan 'http.host == "basic.ichimarumaru.tech" && http.authorization'.
+Tambahan: Tidak semua paket GET memiliki data authorization yang berisi username dan password. Sehingga lebih baik menggunakan ```http.host == "basic.ichimarumaru.tech" && http.authorization```.
 ![no-3+](img/no-3+.png)
 
 ## Soal 4

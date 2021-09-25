@@ -40,7 +40,8 @@ Sebutkan webserver yang digunakan pada "ichimarumaru.tech"!
 - Maka akan terlihat bahwa Web server yang digunakan adalah nginx/1.18.0.
 ![no-1c](img/no-1c.png)
 
-Tambahan: Pengambilan paket juga dapat lebih spesifik menggunakan ```http.host == "ichimarumaru.tech"```.
+**Tambahan:**\
+Pengambilan paket juga dapat lebih spesifik menggunakan ```http.host == "ichimarumaru.tech"```.
 ![no-1+](img/no-1+.png)
 
 ## Soal 2
@@ -66,7 +67,8 @@ Ikuti perintah di basic.ichimarumaru.tech! Username dan password bisa didapatkan
 - Setelah itu, username dan password dimasukkan pada `basic.ichimarumaru.tech` dan diminta untuk memasukkan urutan konfigurasi kabel T568A
 ![no-3c](img/no-3c.png)
 
-Tambahan: Tidak semua paket GET memiliki data authorization yang berisi username dan password. Sehingga lebih baik menggunakan ```http.host == "basic.ichimarumaru.tech" && http.authorization```.
+**Tambahan:**\
+Tidak semua paket GET memiliki data authorization yang berisi username dan password. Sehingga lebih baik menggunakan ```http.host == "basic.ichimarumaru.tech" && http.authorization```.
 ![no-3+](img/no-3+.png)
 
 ## Soal 4
@@ -76,9 +78,9 @@ Temukan paket mysql yang mengandung perintah query select!
 - Dilakukan filter dengan ```mysql.query contains "select" || mysql.query contains "SELECT"```.
 ![no-4a](img/no-4a.png)
 - Maka akan terlihat bahwa paket mysql tersebut mengandung perintah `SELECT` atau `select`. Perbedaan ini dikarenakan untuk nama string case sensitive. Sehingga berikut pengecekan hasil capture query.
-![no-4b](img/no-4b-.png)
+    ![no-4b](img/no-4b-.png)
 
-![no-4c](img/no-4c.png)
+    ![no-4c](img/no-4c.png)
 
 
 ## Soal 5
@@ -171,7 +173,8 @@ Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
 - Gambar berikut menunjukan hasil capture filter paket yang berasal dari port 80.
 ![no-11b](img/no-11b.png)
 
-Tambahan: Port 80 digunakan untuk mengakses web dengan protokol HTTP. Tanpa mengakses `monta.if.its.ac.id` yang menggunakan HTTP, tidak akan ada paket yang masuk.
+**Tambahan:**\
+Port 80 digunakan untuk mengakses web dengan protokol HTTP. Tanpa mengakses `monta.if.its.ac.id` yang menggunakan HTTP, tidak akan ada paket yang masuk.
 
 ## Soal 12
 Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
@@ -185,7 +188,8 @@ Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
 - Tetapi, jika tidak menggunakan poin b, maka hasilnya akan kosong seperti berikut.
 ![no-12c](img/no-12.png)
 
-Tambahan: Port 21 digunakan untuk file transfer melalui FTP. Sehingga koneksi FTP harus dibuka untuk capture paketnya di wireshark.
+**Tambahan:**\
+Port 21 digunakan untuk file transfer melalui FTP. Sehingga koneksi FTP harus dibuka untuk capture paketnya di wireshark.
 
 ## Soal 13
 Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
@@ -197,7 +201,8 @@ Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
 - Gambar berikut menunjukkan capture filter paket yang menuju port 443.
 ![no-13b](img/no-13b.png)
 
-Tambahan: Port 443 digunakan untuk mengakses website yang menggunakan HTTPS, sehingga dilakukan akses ke `its.ac.id` yang menggunakan HTTPS.
+**Tambahan:**\
+Port 443 digunakan untuk mengakses website yang menggunakan HTTPS, sehingga dilakukan akses ke `its.ac.id` yang menggunakan HTTPS.
 
 ## Soal 14
 Filter sehingga Wireshark hanya mengambil paket yang tujuannya ke `kemenag.go.id`!
